@@ -1,0 +1,117 @@
+body{
+    
+    margin: 0;
+    
+}
+
+.main-cont{
+   background-color: rgb(255, 255, 255);
+}
+
+
+
+
+.header{
+
+    
+    padding: 15px;
+    padding-bottom: 4px;
+    box-shadow: 0px 2px 2px rgb(139, 131, 131);
+}
+
+#navigation{
+    list-style-type: none;
+    display: flex;
+    margin-top: 20px;
+}
+
+#navigation li{
+margin-right: 30px;
+font-size: 18px;
+
+text-align: right;
+}
+
+#navigation li a{
+    text-decoration: none;
+    color: rgb(13, 39, 39);
+}
+
+.flex1 h1{
+    font-size: 70px;
+
+}
+
+.flex1{
+    padding-top: 150px;
+    
+}
+
+.flex2 img{
+    width: 500px;
+}
+
+.input-form{
+    width: 70%;
+    height: 50px;
+    box-shadow: 1px 1px 5px grey;
+    padding: 10px;
+    font-size: 20px;
+    
+}
+
+.search-wrapper{
+    margin-top: 50px;
+}
+
+.search-btn{
+    width: 20%;
+    height: 50px;
+    box-shadow: 1px 1px 5px grey;
+    font-size: 24px;
+    background-color: rgb(180, 10, 129);
+    color: white;
+    border: none;
+   
+}
+
+.result-page{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 1px solid grey;
+    height: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px grey;
+}
+
+.result-btn{
+    width: 160px;
+    height: 40px;   
+    font-size: 20px;
+    background-color: rgb(90, 56, 80);
+    color: white;
+    border: none;
+    border-radius: 18px;
+   
+}
+
+
+.result-btn:hover{
+    
+    background-color: rgb(134, 54, 112);
+    color: white;
+   
+   
+}
+
+.result-page h6{
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+.pay-details{
+
+    margin-left: 20px;
+    margin-right: 20px;
+}
