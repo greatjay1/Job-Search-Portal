@@ -125,3 +125,20 @@ margin-top: 80px;
 .pError{
     color: red;
 }
+
+.sidebar{
+
+    width: 300px;
+    height: 400px;
+    background-color: aliceblue;
+    border-radius: 7px;
+    box-shadow: 0px 2px 2px rgb(139, 131, 131);
+    padding: 25px;
+
+}
+
+.sidebar li{
+    list-style-type: none;
+    font-size: 20px;
+    margin-bottom: 10px;
+}

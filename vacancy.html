@@ -37,6 +37,8 @@
     <div class="row flex-wrapper">
         <div class="col-md-1 flex1"></div>
         <div class="col-md-11 vacan"><h1>Available Vacancies</h1>  </div>
+
+        <p class="errDisplay"></p>
         
     </div>
 </div>
@@ -45,62 +47,56 @@
 </div>
 
 
-<div class="container result-page">
-    <div class="row">
-<div class="col-md-2"><img src="Images/job-list1.png" alt="" srcset=""></div>
-<div class="col-md-7">
+<div class="main-wrapper">
 
-<h2 class="job-title">Digital Marketer</h2>
-
-<i class="fa-solid fa-briefcase"></i> Creative Agency   <span class="pay-details"> <i class="fa-solid fa-location-dot"></i> Athens, Greece   </span>  <i class="fa-solid fa-sack-dollar"></i> $3500 - $4000
-
-</div>
+<div class="row">
+    <div class="col-md-1"></div>
 <div class="col-md-3">
 
-    <button class="result-btn">Apply for Job</button>
-    <h6> 7 hours ago</h6>
+
+ <ul class="sidebar">
+<li ><i onclick="getVacancies(`${'Administrative'}`)"  class="fa-solid fa-angle-right"></i><a href="" class="admin">Administrative</a></li>
+<li><i class="fa-solid fa-angle-right"></i><a href="">Accounting</a></li>
+<li><i class="fa-solid fa-angle-right"></i><a href="">Sales</a></li>
+<li><i class="fa-solid fa-angle-right"></i><a href="">Marketing</a></li>
+<li><i class="fa-solid fa-angle-right"></i><a href="">Hospitality</a></li>
+<li><i class="fa-solid fa-angle-right"></i><a href="">Management</a></li>
+<li><i class="fa-solid fa-angle-right"></i><a href="">Engineering</a></li>
+ </ul>   
+
+
 </div>
+<!-- <div class="col-md-7">
+
+    <div class="container result-page">
+        <div class="row">
+    <div class="col-md-2"><img src="Images/job-list1.png" alt="" srcset=""></div>
+    <div class="col-md-7">
+    
+    <h2 class="job-title">Digital Marketer</h2>
+    
+    <i class="fa-solid fa-briefcase"></i> Creative Agency   <span class="pay-details"> <i class="fa-solid fa-location-dot"></i> Athens, Greece   </span>  <i class="fa-solid fa-sack-dollar"></i> $3500 - $4000
+    
     </div>
-</div>
-
-
-<div class="container result-page">
-    <div class="row">
-<div class="col-md-2"><img src="Images/job-list1.png" alt="" srcset=""></div>
-<div class="col-md-7">
-
-<h2 class="job-title">Digital Marketer</h2>
-
-<i class="fa-solid fa-briefcase"></i> Creative Agency   <span class="pay-details"> <i class="fa-solid fa-location-dot"></i> Athens, Greece   </span>  <i class="fa-solid fa-sack-dollar"></i> $3500 - $4000
-
-</div>
-<div class="col-md-3">
-
-    <button class="result-btn">Apply for Job</button>
-    <h6> 7 hours ago</h6>
-</div>
+    <div class="col-md-3">
+    
+        <button class="result-btn">Apply for Job</button>
+        <h6> 7 hours ago</h6>
     </div>
-</div>
-
-
-
-<div class="container result-page">
-    <div class="row">
-<div class="col-md-2"><img src="Images/job-list1.png" alt="" srcset=""></div>
-<div class="col-md-7">
-
-<h2 class="job-title">Digital Marketer</h2>
-
-<i class="fa-solid fa-briefcase"></i> Creative Agency   <span class="pay-details"> <i class="fa-solid fa-location-dot"></i> <p class="location1">Athens, Greece </p>  </span>  <i class="fa-solid fa-sack-dollar"></i> $3500 - $4000
-
-</div>
-<div class="col-md-3">
-
-    <button class="result-btn">Apply for Job</button>
-    <h6> 7 hours ago</h6>
-</div>
+        </div>
     </div>
+
+
+</div> -->
+
+
+<p id="FilterJobs">
+
+</p>
+<div class="col-md-1"></div>
 </div>
+</div>
+
 
     
 <script src="JS/script.js"></script>
