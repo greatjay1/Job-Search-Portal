@@ -58,23 +58,11 @@ fetch(`https://api.lmiforall.org.uk/api/v1/vacancies/search?keywords=Digital%20$
 }
 
 
-// let adminn = document.querySelector(".admin");
-
-
-
-const Administrative = 'Administrative';
-
-
-
-function getVacancies(Administrative){
-
-
+function getVacancies(SearchValue){
     let err = document.querySelector(".errDisplay");
     let FilterJobs = document.getElementById("FilterJobs");
 
-    
-    
-    fetch(`https://api.lmiforall.org.uk/api/v1/vacancies/search?keywords=${Administrative}`)
+     fetch(`https://api.lmiforall.org.uk/api/v1/vacancies/search?keywords=${SearchValue}`)
     .then(response => response.ok ? response.json() : Promise.reject("Error fetching API"))
     .then(data =>{
        
@@ -83,10 +71,7 @@ function getVacancies(Administrative){
             
             // const jobTitle = data[index].title;
     
-            console.log(data);
-
-    
-    
+      
     
             FilterJobs.innerHTML += `
             <div class="container result-page">
@@ -122,12 +107,66 @@ function getVacancies(Administrative){
         err.innerHTML = " keyword not found, please try another one"
     
     });
+
+    FilterJobs.innerHTML = "";
     
     }
     
-    
-    
-// adminn.addEventListener("onclick", getVacancies);
 
 
-// getVacancies();
+
+
+
+    function calculatePay(){
+
+        let jobTitle = document.getElementById("job-title").value;
+        let salary = document.getElementById("salary").value;
+        let tax = document.getElementById("tax").value;
+        let ni = document.getElementById("ni").value;
+        // let workhour = document.getElementById("workhour").value;
+
+        let hour = document.querySelector("#hour").value;
+        let day = document.querySelector("#day").value;
+        let week = document.querySelector("#week").value;
+        let year = document.querySelector("#year").value;
+        let output = document.querySelector(".resultOutput");
+
+        if(document.getElementById("hour").checked){
+
+           
+
+            output.innerHTML = `Hourly pay for ${jobTitle} is ${Math.round(salary/730)-(tax)-(ni)}GBP `;
+            output.style.color="green";
+        }
+
+        else if (document.getElementById("day").checked){
+
+     
+            output.innerHTML = `Daily pay for ${jobTitle} is ${Math.round(salary/30)-(tax)-(ni)}GBP `;
+            output.style.color="green";
+
+        }
+
+        else if (document.getElementById("week").checked){
+
+            output.innerHTML = `Weekly pay for ${jobTitle} is ${Math.round(salary/7)-(tax)-(ni)}GBP `;
+            
+            output.style.color="green";
+        }
+
+        else if (document.getElementById("year").checked){
+
+            
+            output.innerHTML = `Yearly pay for ${jobTitle} is ${Math.round(salary*12)-(tax)-(ni)}GBP `;
+            output.style.color="green";
+        }
+
+        else{
+        output.innerHTML = "Please select either HOUR, DAY, WEEK or YEAR"
+        output.style.color="red";
+            
+        }
+
+
+
+    }

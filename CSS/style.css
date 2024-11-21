@@ -142,3 +142,45 @@ margin-top: 80px;
     font-size: 20px;
     margin-bottom: 10px;
 }
+
+#job-title{
+
+    width: 70%;
+    height: 40px;
+}
+
+#salary{
+
+    width: 70%;
+    height: 40px;
+}
+
+#tax{
+
+    width: 70%;
+    height: 40px;
+}
+
+#ni{
+
+    width: 70%;
+    height: 40px;
+}
+
+
+#workhour{
+
+    width: 70%;
+    height: 40px;
+}
+
+.form-Container{
+
+    width: 600px;
+    height: auto;
+    
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+
+}
